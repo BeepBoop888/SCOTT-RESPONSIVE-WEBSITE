@@ -1,0 +1,226 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  padding: env(save-area-inset);
+}
+
+body {
+  font-family: "Lobster", cursive;
+  color: black;
+}
+
+.navbar-brand img {
+  padding-left: 5rem;
+  height: 2rem;
+}
+
+.downarrow img {
+  height: 0.1rem;
+}
+
+.navbar {
+  background-color: black;
+  padding: 0.6rem 1rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.navbar-nav li {
+  padding-right: 5rem;
+}
+
+.navbar-nav .nav-link {
+  padding-top: 0.8rem;
+  color: white !important;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #a5b7de !important;
+}
+
+.navbar-brand img {
+  height: 2.2rem;
+  margin-left: -60px;
+}
+
+.landing {
+  height: 50vh;
+}
+
+.slogan {
+  font-family: "Open Sans", sans-serif;
+  margin-top: -10px;
+  color: white;
+}
+
+.rule1 {
+  color: black;
+}
+
+.home-inner {
+  background-image: url("images/LandingBackground.jpg");
+  position: fixed;
+  z-index: 100;
+}
+
+.caption {
+  z-index: 1;
+  position: absolute;
+  top: 40%;
+  text-align: center;
+}
+
+.btn {
+  border-width: medium;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.custom-btn-hover:hover {
+  border-radius: 15px;
+}
+
+.btn-dark {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.landing {
+  position: relative;
+  width: 100%;
+  display: table;
+  z-index: -1;
+}
+
+home-wrap {
+  clip: rect(0, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.home-inner {
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  will-change: transform;
+}
+
+.buffer {
+  margin-top: 300px;
+}
+
+.buffer2 {
+  margin-top: 62px;
+}
+
+.buffer3 {
+  margin-top: 62px;
+}
+
+.offset:before {
+  content: "";
+  height: "3.875rem"; /*inspect Nav with Q, to determine the exact hight*/
+  display: block;
+  margin-top: -3.875rem;
+}
+
+.footer {
+  background-color: black;
+}
+
+.footer img {
+  height: 2rem;
+}
+
+.navbaricon {
+  height: 1.5rem;
+}
+
+.whitelink,
+.whitelink:hover,
+.whitelink.active {
+  color: white !important;
+  text-decoration: none;
+}
+
+.jumbotron {
+  border-radius: 0;
+  color: black;
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+.jumbotron img {
+  margin-bottom: 1rem;
+}
+
+h2,
+h4 {
+  font-family: "Lobster", cursive;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Three Columns on full width*/
+.column {
+  flex: 25%;
+  max-width: 33.3%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  filter: grayscale(1) brightness(0.5);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.column img:hover {
+  filter: grayscale(0);
+}
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .column img {
+    filter: grayscale(0) brightness(1);
+  }
+}
+
+.custom-bg {
+  background-color: black;
+}
+
+.copyright .copyright:hover .copyright.active {
+  color: white;
+}
